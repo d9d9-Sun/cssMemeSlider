@@ -30,17 +30,65 @@ body {
 
 ul {
     position: absolute;
-    bottom: -50px;
+    bottom: -70px;
     right: 0;
     display: flex;
-    gap: 10px;
+    gap: 5px;
     list-style: none;
 }
 
 ul li a {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+ul li a span {
+    display: flex;
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background: #7facf9;
+}
+
+a[href="#slide1"] span {
+    background: transparent;
+    border: 1px solid #7facf9;
+}
+
+#slide1:target ~ ul li a[href="#slide1"] span,
+#slide2:target ~ ul li a[href="#slide2"] span,
+#slide3:target ~ ul li a[href="#slide3"] span,
+#slide4:target ~ ul li a[href="#slide4"] span,
+#slide5:target ~ ul li a[href="#slide5"] span {
+    background: transparent;
+    border: 1px solid #7facf9;
+}
+
+#slide2:target ~ ul li a[href="#slide1"] span,
+#slide3:target ~ ul li a[href="#slide1"] span,
+#slide4:target ~ ul li a[href="#slide1"] span,
+#slide5:target ~ ul li a[href="#slide1"] span {
+  background: #7facf9;
+}
+
+ul li a:hover span {
+    background: #fff;
+}
+
+#slide1:target ~ ul li a[href="#slide1"]:hover span,
+#slide2:target ~ ul li a[href="#slide2"]:hover span,
+#slide3:target ~ ul li a[href="#slide3"]:hover span,
+#slide4:target ~ ul li a[href="#slide4"]:hover span,
+#slide5:target ~ ul li a[href="#slide5"]:hover span {
+    border: 1px solid #fff;
+}
+
+#slide2:target ~ ul li a[href="#slide1"]:hover span,
+#slide3:target ~ ul li a[href="#slide1"]:hover span,
+#slide4:target ~ ul li a[href="#slide1"]:hover span,
+#slide5:target ~ ul li a[href="#slide1"]:hover span {
+  background: #fff;
 }

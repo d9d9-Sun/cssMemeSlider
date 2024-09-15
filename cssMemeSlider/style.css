@@ -82,10 +82,13 @@ input {
     display: flex;
     justify-content: flex-end;
     width: 70%;
-    margin: -1em auto;
+    margin: -1.3em auto;
 }
 
 .slider-controls label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1.5em;
     height: 1.5em;
     cursor: pointer;
@@ -118,4 +121,14 @@ input {
 #s4:checked ~ .slider-controls label[for="s4"]:hover span,
 #s5:checked ~ .slider-controls label[for="s5"]:hover span {
     border: 1px solid #fff;
+}
+
+@media (max-width: 780px) {
+    .slider-controls {
+        width: max-content;
+        margin: -3.5em auto;
+    }
+    .captions-wrapper {
+        margin-top: 2em;
+    }
 }

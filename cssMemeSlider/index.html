@@ -9,19 +9,29 @@
 </head>
 <body>
     <div class="slider">
-        <img src="memes/slide1.jpg" alt="meme one" id="slide1">
-        <img src="memes/slide2.jpg" alt="meme two" id="slide2">
-        <img src="memes/slide3.jpg" alt="meme three" id="slide3">
-        <img src="memes/slide4.jpg" alt="meme four" id="slide4">
-        <img src="memes/slide5.jpg" alt="meme five" id="slide5">
+        <input checked type="radio" name="slider" class="switch-slider" id="slide1">
+        <input type="radio" name="slider" class="switch-slider" id="slide2">
+        <input type="radio" name="slider" class="switch-slider" id="slide3">
+        <input type="radio" name="slider" class="switch-slider" id="slide4">
+        <input type="radio" name="slider" class="switch-slider" id="slide5">
 
-        <ul>
-            <li><a href="#slide1"><span></span></a></li>
-            <li><a href="#slide2"><span></span></a></li>
-            <li><a href="#slide3"><span></span></a></li>
-            <li><a href="#slide4"><span></span></a></li>
-            <li><a href="#slide5"><span></span></a></li>
-        </ul>
+        <div class="slides">
+            <div class="slides-container">
+                <img src="memes/slide1.jpg" alt="meme one" id="slide1">
+                <img src="memes/slide2.jpg" alt="meme two" id="slide2">
+                <img src="memes/slide3.jpg" alt="meme three" id="slide3">
+                <img src="memes/slide4.jpg" alt="meme four" id="slide4">
+                <img src="memes/slide5.jpg" alt="meme five" id="slide5">
+            </div>
+        </div>
+
+        <div id="active">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+          </div>
     </div>
 </body>
 </html>

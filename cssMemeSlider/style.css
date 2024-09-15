@@ -16,7 +16,7 @@ body {
     margin: 5% auto 0;
     display: flex;
     flex-direction: row;
-    padding-bottom: 40px;
+    padding-bottom: 2em;
     transition: transform 0.5s ease;
 }
 
@@ -47,7 +47,6 @@ img {
     display: inline-block;
     min-width: 100%;
     transition: transform 0.5s ease;
-    padding-right: 30%;
 }
 
 #s1:checked ~ .slider-wrapper .slider,

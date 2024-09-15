@@ -100,6 +100,7 @@ input {
     height: 0.9em;
     background: #7facf9;
     border-radius: 50%;
+    transition: all 0.5s ease;
 }
 
 #s1:checked ~ .slider-controls .s1 span,

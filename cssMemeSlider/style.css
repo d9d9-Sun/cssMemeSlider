@@ -6,8 +6,19 @@
     width: 70%;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 
 .slider img {
     width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.slider img:target {
+    opacity: 1;
+}
+
+.slider img#slide1 {
+    opacity: 1;
 }

@@ -31,7 +31,7 @@ img {
 }
 
 .captions-wrapper {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -83,7 +83,7 @@ input {
     display: flex;
     justify-content: flex-end;
     width: 70%;
-    margin: 0 auto;
+    margin: -1em auto;
 }
 
 .slider-controls label {
